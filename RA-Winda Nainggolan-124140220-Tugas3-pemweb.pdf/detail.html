@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pendaftaran</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Peminjaman Ruang dan Fasilitas</h1>
+        <p>Detail Informasi Pendaftar</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+
+            <h2>Detail Pendaftaran</h2>
+
+            <div class="info-box">
+                Data berikut merupakan data yang kamu masukkan
+                pada halaman pendaftaran.
+            </div>
+
+            <table>
+
+                <tr>
+                    <th>Data</th>
+                    <th>Informasi</th>
+                </tr>
+
+                <tr>
+                    <td>Nama Peminjam</td>
+                    <td id="nama"></td>
+                </tr>
+
+                <tr>
+                    <td>NIM</td>
+                    <td id="nim"></td>
+                </tr>
+
+                <tr>
+                    <td>Ruang</td>
+                    <td id="ruang"></td>
+                </tr>
+
+                <tr>
+                    <td>Tanggal</td>
+                    <td id="tanggal"></td>
+                </tr>
+
+                <tr>
+                    <td>Keperluan</td>
+                    <td id="keperluan"></td>
+                </tr>
+
+            </table>
+
+            <a href="index.html" class="back-link">
+                ← Kembali ke halaman pendaftaran
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript untuk mengambil data dari URL -->
+    <script>
+
+        // Mengambil data dari query string
+        const params = new URLSearchParams(window.location.search);
+
+        // Menampilkan data ke halaman
+        document.getElementById("nama").textContent =
+            params.get("nama") || "-";
+
+        document.getElementById("nim").textContent =
+            params.get("nim") || "-";
+
+        document.getElementById("ruang").textContent =
+            params.get("ruang") || "-";
+
+        document.getElementById("tanggal").textContent =
+            params.get("tanggal") || "-";
+
+        document.getElementById("keperluan").textContent =
+            params.get("keperluan") || "-";
+
+    </script>
+
+</body>
+
+</html>

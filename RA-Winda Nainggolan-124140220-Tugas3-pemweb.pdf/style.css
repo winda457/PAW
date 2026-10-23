@@ -1,0 +1,223 @@
+/* ========================================
+   STYLE DASAR
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #243447;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    background-color: #1769aa;
+    color: white;
+    padding: 28px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+
+/* ========================================
+   BOX / CARD
+======================================== */
+
+.card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    margin-bottom: 24px;
+}
+
+
+/* ========================================
+   JUDUL
+======================================== */
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+
+/* Input, Select dan Textarea */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #b8c4d0;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Efek ketika form dipilih */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #8fc7f5;
+}
+
+
+/* ========================================
+   TOMBOL
+======================================== */
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1769aa;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* Efek hover tombol */
+
+button:hover {
+    background-color: #0f4f80;
+}
+
+
+/* ========================================
+   INFO BOX
+======================================== */
+
+.info-box {
+    background-color: #eef6ff;
+    border-left: 5px solid #1769aa;
+    padding: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   TABEL
+======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+
+/* Kolom tabel */
+
+th,
+td {
+    border: 1px solid #cbd5df;
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* Header tabel */
+
+th {
+    background-color: #e7f1fb;
+}
+
+
+/* Warna baris tabel selang-seling */
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+
+/* ========================================
+   LINK KEMBALI
+======================================== */
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1769aa;
+    text-decoration: none;
+}
+
+
+/* Efek hover link */
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+}

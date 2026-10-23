@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peminjaman Ruang</title>
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Peminjaman Ruang dan Fasilitas</h1>
+        <p>Halaman Pendaftaran</p>
+    </header>
+
+    <!-- Isi halaman -->
+    <main class="container">
+
+        <section class="card">
+
+            <h2>Form Pendaftaran</h2>
+
+            <div class="info-box">
+                Silakan isi data berikut untuk melakukan pendaftaran
+                peminjaman ruang dan fasilitas.
+            </div>
+
+            <!-- Form menggunakan method GET -->
+            <form action="detail.html" method="get">
+
+                <!-- Nama -->
+                <label for="nama">Nama Peminjam</label>
+                <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                >
+
+                <!-- NIM -->
+                <label for="nim">NIM</label>
+                <input
+                    type="text"
+                    id="nim"
+                    name="nim"
+                    placeholder="Masukkan NIM"
+                    required
+                >
+
+                <!-- Pilihan ruang -->
+                <label for="ruang">Ruang</label>
+                <select id="ruang" name="ruang" required>
+                    <option value="">-- Pilih Ruang --</option>
+                    <option value="Ruang 101">Ruang 101</option>
+                    <option value="Ruang 102">Ruang 102</option>
+                    <option value="Laboratorium Komputer">
+                        Laboratorium Komputer
+                    </option>
+                </select>
+
+                <!-- Tanggal -->
+                <label for="tanggal">Tanggal Peminjaman</label>
+                <input
+                    type="date"
+                    id="tanggal"
+                    name="tanggal"
+                    required
+                >
+
+                <!-- Keperluan -->
+                <label for="keperluan">Keperluan</label>
+                <textarea
+                    id="keperluan"
+                    name="keperluan"
+                    rows="4"
+                    placeholder="Tuliskan keperluan peminjaman"
+                ></textarea>
+
+                <!-- Tombol -->
+                <button type="submit">
+                    Daftar Peminjaman
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
